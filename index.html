@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stephanie Carlson</title>
+       <!-- this is an absolute link
+         <link rel="stylesheet" href="https://smcarlson192.github.io/UX_UI_HW_17/css/style.css"> 
+        -->
+       <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <a href="index.html">
+                        <img src="images/LogowName.png" alt="Stephanie Carlson Designs Logo" height="72">
+                    </a>
+                    <div class="topnav">
+                        <a href="uxui.html">UX/UI Design</a>
+                        <a href="gd.html">Graphic Design</a>
+                        <a href="resume.html">Resume</a>
+                        <button class="button-1">Get In Touch</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="hero-home">
+                <h1>Stephanie Carlson</h1>
+                <h4>I am dedicated Sr. Graphic Designer & Intermediate UI/UX Designer with a passion for crafting exceptional experiences. My expertise lies in the realms of Visual Design, Branding and UI/UX Design, ensuring my creations meet user needs through research and data. </h4>
+                <div class="inline-buttons">
+                    <button class="button-2">UX/UI Design</button>
+                    <button class="button-2">Graphic Design</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div class="featured-section">
+                    <div class="featured-box">
+                        <div class="featured-copy">
+                            <h2>Featured UX/UI Projects</h2>
+                            <h6>Discover the intersection of design and user experience with a portfolio that showcases intuitive, user-centric designs</h6>
+                            <!-- this accordion code is from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion -->
+                            <button class="accordion">UIUX Design Tools & Skills Acquired</button>
+                            <div class="panel">
+                                <p>Figma
+                                <br>Miro
+                                <br>Trello + Milanote
+                                <br>Accessibility
+                                <br>Prototyping
+                                <br>Heuristic Evaluation
+                                <br>User Research
+                                <br>Visual Design</p>
+                            </div>
+                    
+                            <script>
+                                var acc = document.getElementsByClassName("accordion");
+                                var i;
+                                
+                                for (i = 0; i < acc.length; i++) {
+                                  acc[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var panel = this.nextElementSibling;
+                                    if (panel.style.display === "block") {
+                                      panel.style.display = "none";
+                                    } else {
+                                      panel.style.display = "block";
+                                    }
+                                  });
+                                }
+                            </script>
+                            <button onclick="document.location='uxui.html'" class="button-1">UX/UI Design Portfolio</button>
+                        </div>
+                    </div>
+                    <div class=".project-card" style=" box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); border-radius: 8px; background-color: white;">
+                        <img class="project-photo" src="images/PAWS.png" alt="PAWS Chicago Website Redesign Image" width="512" height="307">
+                        <div class="project-card-bottom">
+                            <div class="project-card-bottom-content">
+                                <h5>PAWS Chicago</h5>
+                                <button class="button-circle-2"><img src="images/arrow_next.svg" alt="View PAWS" height="13"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=".project-card" style=" box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); border-radius: 8px; background-color: white;">
+                        <img class="project-photo" src="images/SampleGenius.png" alt="Sample Genius Mobile App Image" width="512" height="307">
+                        <div class="project-card-bottom">
+                            <div class="project-card-bottom-content">
+                                <h5>Sample Genius</h5>
+                                <button class="button-circle-2"><img src="images/arrow_next.svg" alt="View Sample Genius" height="13"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div class="featured-section" style="background-color: white;">
+                    <div class="featured-box">
+                        <div class="featured-copy">
+                            <h2>Featured Graphic Design Projects</h2>
+                            <h6>Embark on a visual journey with a portfolio that will captivate its audience and elevate different brand experiences.</h6>
+                            <!-- this accordion code is from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion -->
+                            <!-- <button class="accordion">Graphic Design Tools & Skills Acquired</button>
+                            <div class="panel">
+                                <p>Adobe Illustrator, After Effects, InDesign + Photoshop
+                                <br>Sharepoint
+                                <br>Illustration
+                                <br>Print + Web Design
+                                <br>Video Design
+                                <br>Visual + Brand Design</p>
+                            </div>
+                                
+                            <script>
+                                var acc = document.getElementsByClassName("accordion");
+                                var i;
+                                
+                                for (i = 0; i < acc.length; i++) {
+                                  acc[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var panel = this.nextElementSibling;
+                                    if (panel.style.display === "block") {
+                                      panel.style.display = "none";
+                                    } else {
+                                      panel.style.display = "block";
+                                    }
+                                  });
+                                }
+                            </script> -->
+                            <button onclick="document.location='gd.html'" class="button-1">Graphic Design Portfolio</button>
+                        </div>
+                    </div>
+                    <div class=".project-card" style=" box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); border-radius: 8px; background-color: white;">
+                        <img class="project-photo" src="images/VideoAnimation.png" alt="Video Design Image" width="512" height="307">
+                        <div class="project-card-bottom">
+                            <div class="project-card-bottom-content">
+                                <h5>Video Animation Design</h5>
+                                <button class="button-circle-2"><img src="images/arrow_next.svg" alt="View Video Animation" height="13"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=".project-card" style=" box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); border-radius: 8px; background-color: white;">
+                        <img class="project-photo" src="images/Illustration.png" alt="Illustration Image" width="512" height="307">
+                        <div class="project-card-bottom">
+                            <div class="project-card-bottom-content">
+                                 <h5>Illustration & Leadership</h5>
+                                 <button class="button-circle-2"><img src="images/arrow_next.svg" alt="View Paw Family Illustration" height="13"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footerbar">
+                <div class="logo">
+                    <img src="images/LogoNoTag.png" alt="Stephanie Carlson Designs Logo" height="110">
+                </div>
+                <div class=".contact-column">
+                    <h3>Address</h3>
+                    <h6>1520 Laurel Crossing Pkwy NE 
+                    <br>Buford, GA </h6>
+                </div>
+                <div class=".contact-column">
+                    <h3>Contact</h3>
+                    <h6>Email: smcarlson192@gmail.com 
+                    <br>Phone: (224) 456-8729</h6>
+                </div>
+                <div class=".contact-column">
+                    <h3>Follow Me</h3>
+                    <div style="display: flex; gap: 24px;">
+                        <button class="button-circle-1"><img src="images/facebook.svg" alt="facebook" height="32"></button>
+                        <button class="button-circle-1"><img src="images/Insta.svg" alt="Instagram" height="32"></button>
+                        <button class="button-circle-1"><img src="images/LinkedIn.svg" alt="LinkedIn" height="32"></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section>
+            <div class="copyright">
+                <div class="copyright-font">Copyright © 2023 Stephanie Carlson Buford, GA</div>
+            </div>
+        </section>
+    </body>
+    </html>
