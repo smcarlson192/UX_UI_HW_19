@@ -18,7 +18,6 @@ header {
 a {
     text-decoration: none;
 }
-
 .topnav {
     overflow: hidden;
     justify-content: center; 
@@ -26,7 +25,6 @@ a {
     gap: 24px;
     display: inline-flex;
 }
-  
 .topnav a {
     float: left;
     display: block;
@@ -43,18 +41,15 @@ a {
     display: inline-flex;
     border-bottom: 3px solid transparent;
 }
-  
 .topnav a:hover {
     border-bottom: 3px solid #565272;
     color:#565272;
     text-decoration: none;
 }
-  
 .topnav a.active {
     border-bottom: 3px solid #1A135A;
     text-decoration: none;
 }
-
 ul {
     display: block;
     list-style-type: none;
@@ -65,13 +60,11 @@ ul {
     font-size: 20px;
     font-weight: 600;
 }
-
 li {
     display: block;
     padding: 24px;
     color:#1A135A;
 }
-
 li:hover {
     font-weight: 700;
     font-size: 19px;
@@ -79,7 +72,6 @@ li:hover {
 .liactive {
     border-bottom: 3px;
 }
-
 .navbar {
     width: 90%; 
     height: 100%; 
@@ -90,7 +82,6 @@ li:hover {
     gap: 24px; 
     display: block;
 }
-
 h1 {width: 1584px; 
     height: 89px; 
     color: #1A135A; 
@@ -504,7 +495,7 @@ footer {
     'CCftA SampleGenius PAWS'
     'TravelGlass TBD UXSkills';
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 24px;
+    grid-template-rows: auto auto;
     background-color: #ffffff;
     padding-left: 48px;
     padding-right: 48px;
@@ -547,15 +538,17 @@ footer {
     'OPTO LA HRP'
     'ABBV PFI PF'
     'SG ABBVV GDSkills';
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
     background-color: #ffffff;
     padding-left: 48px;
     padding-right: 48px;
 }
-@media only screen and (max-width:600){
+
+@media only screen and (max-width:600) {
     .grid-container1 {
-        grid-template-rows:  auto auto auto auto auto auto;
         grid-template-columns: 1fr;
+        grid-template-rows:  auto auto auto auto auto auto;
         grid-template-areas:
         'CCftA'
         'SampleGenius'
