@@ -91,10 +91,7 @@ h1 {width: 1584px;
     line-height: 88.30px; 
     word-wrap: break-word;
     display: block;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin: 0px;
 }
 h2 {
     color: #1A135A; 
@@ -146,7 +143,6 @@ h5 {
     margin-inline-end: 0px;
 }
 h6, p {
-    width: 378px; 
     color: #1A135A; 
     font-size: 20px; 
     font-family: Open Sans; 
@@ -568,7 +564,6 @@ footer {
     border-radius: 8px;
     padding: 48px;
     width: 90%;
-
 }
 input[type=text], select {
     width: 100%;
@@ -647,6 +642,51 @@ input[type=submit] {
     display: flex;
     font-weight: 700;
   }
+  .grid-container-project {
+    display: grid;
+    grid-template-areas:
+    'ProjectInfo ProjectPhoto';
+    grid-template-columns: 50% 50%;
+    background: linear-gradient(90deg, #E2E6F2 0%, #D1EBEE 25%, #E9E0F2 50%, #E2E6F2 76%, #EBF3DE 100%); 
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+.item18 { grid-area: ProjectInfo; }
+.item19 { grid-area: ProjectPhoto; }
+
+.item19 {
+    width: 100%;
+    height: 780px;
+    background-color: #ffffff;
+    object-fit: cover;
+    border-radius: 8px;
+    overflow: hidden;
+    align-content: center;
+}
+.grid-container-psp {
+    display: grid;
+    grid-template-areas:
+    'Problem Solution';
+    grid-template-columns: 1fr 1fr;
+    background: #ffffff; 
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 72px;
+    padding-right: 72px;
+    gap: 48px;
+}
+.item20 { grid-area: Problem; }
+.item21 { grid-area: Solution; }
+
+
+
+
+
+
+
+
 @media only screen and (max-width:600) {
     .grid-container1 {
         grid-template-columns: 1fr;
