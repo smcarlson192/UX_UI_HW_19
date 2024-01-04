@@ -531,6 +531,8 @@ footer {
 .item13 { grid-area: SG; }
 .item14 { grid-area: ABBVV; }
 .item15 { grid-area: GDSkills; }
+.item16 {grid-area: head;}
+.item17 {grid-area: form;}
 
 .grid-container2 {
     display: grid;
@@ -545,6 +547,106 @@ footer {
     padding-right: 48px;
 }
 
+.grid-container3 {
+    display: grid;
+    grid-template-areas: 'head form';
+    grid-template-columns: 50% 50%;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #ffffff;
+}
+.item16 {
+    background-color: #ffffff;
+    padding-top: 255px;
+    padding-bottom: 255px;
+}
+.item17 {
+    background-color: #E2E6F2;
+    box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); 
+    border-radius: 8px;
+    padding: 48px;
+    width: 90%;
+
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 12px; 
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #565272;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 12px; 
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #565272;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+label {
+    color: #1A135A;
+    font-size: 16px;
+    font-family: Hind;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+input[type=submit] {
+    padding-left: 24px; 
+    padding-right: 24px; 
+    padding-top: 12px; 
+    padding-bottom: 12px; 
+    background: #1A135A; 
+    box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); 
+    border-radius: 100px; 
+    border: none;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-decoration: none;
+  }
+  input[type=submit]:hover {
+    padding-left: 24px; 
+    padding-right: 24px; 
+    padding-top: 12px; 
+    padding-bottom: 12px; 
+    background: #565272; 
+    box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); 
+    border-radius: 100px; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+    font-weight: 700;
+  }
 @media only screen and (max-width:600) {
     .grid-container1 {
         grid-template-columns: 1fr;
@@ -578,6 +680,14 @@ footer {
         'ABBVV' 
         'GDSkills';
         grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr;
+    }
+    .grid-container3 {
+        display: grid;
+        grid-template-areas:
+        'head'
+        'form';
+        grid-template-rows: auto auto;
         grid-template-columns: 1fr;
     }
 }
