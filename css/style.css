@@ -15,6 +15,9 @@ header {
     gap: 10px; 
     display: inline-flex;
 }
+section {
+    width: 100%;
+}
 a {
     text-decoration: none;
 }
@@ -82,8 +85,7 @@ li:hover {
     gap: 24px; 
     display: block;
 }
-h1 {width: 1584px; 
-    height: 89px; 
+h1 {
     color: #1A135A; 
     font-size: 72px; 
     font-family: Hind; 
@@ -151,6 +153,8 @@ h6, p {
     margin-block-end: 0px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin-top: 12px; 
+    margin-bottom: 24px;
 }
 .header {
     width: 100%; 
@@ -668,7 +672,6 @@ input[type=submit] {
     grid-template-areas:
     'Problem Solution';
     grid-template-columns: 1fr 1fr;
-    background: #ffffff; 
     padding-top: 48px;
     padding-left: 72px;
     padding-right: 72px;
@@ -750,8 +753,81 @@ input[type=submit] {
     border: 2px #E8E7F0 solid; 
     margin: auto;
 }
+.wireframes {
+    width: auto; 
+    height: 100%; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    display: inline-flex;
+    gap: 24px;
+}
+.grid-container-test1 {
+    display: grid;
+    grid-template-areas:
+    'context context image1 image2';
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    background: #ffffff; 
+    gap: 24px;
+    margin-top: 24px;
+}
+.item27 { grid-area: context; }
+.item28 { grid-area: image1; }
+.item29 { grid-area: image2; }
 
-
+.item28, .item29 {
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    object-fit: cover;
+    align-self: start;
+}
+.grid-container-boxes {
+    display: grid;
+    grid-template-areas:
+    'box1 box2';
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: #ffffff; 
+    gap: 24px;
+    margin-top: 24px;
+}
+.item30 { grid-area: box1; }
+.item31 { grid-area: box2; }
+.item30 {
+    padding: 24px;
+    height: 70%;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 12px; 
+    display: inline-flex;
+    text-align: center; 
+    color: #1A135A; 
+    word-wrap: break-word;
+    background: #E9E0F2; 
+}
+.item31 {
+    padding: 24px;
+    height: 70%;
+    background: #D1EBEE; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    gap: 12px; 
+    display: inline-flex;
+}
+.grid-container-test2 {
+    display: grid;
+    grid-template-areas:
+    'image1 image1 context context';
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    background: #ffffff; 
+    gap: 24px;
+    margin-top: 24px;
+}
 
 @media only screen and (max-width:600) {
     .grid-container1 {
