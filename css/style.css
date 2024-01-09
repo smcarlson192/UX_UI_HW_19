@@ -118,7 +118,6 @@ h3 {
      margin-inline-end: 0px;
 }
 h4 {
-    width: 1046px; 
     color: #1A135A; 
     font-size: 28px; 
     font-family: Open Sans; 
@@ -279,7 +278,7 @@ h6, p {
     background: #C9C7D6; 
 }
 .hero-home {
-    width: 94%; 
+    width: 66%; 
     height: 100%; 
     padding-left: 72px; 
     padding-right: 72px;
@@ -408,7 +407,7 @@ footer {
     display: inline-flex;
 }
 .accordion {
-    width: 536px;
+    width: 100%;
     background-color: #B0C6D9;
     color: #1A135A;
     cursor: pointer;
@@ -446,7 +445,7 @@ footer {
     overflow: hidden;
 }
 .project-card {
-    width: 512px; 
+    width: 100%; 
     background-color: white; 
     box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); 
     border-radius: 8px; 
@@ -499,11 +498,10 @@ footer {
 
 .grid-item, .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
     background-color: #ffffff;
-    min-width: 536px;
+    min-width: 362px;
     border: none;
     padding: 24px;
     font-size: 24px;
-    text-align: center;
 }
 
 .image-container {
