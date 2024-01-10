@@ -947,6 +947,19 @@ video {
     width: 100%;
     height: auto;
 }
+.grid-container-gdmain {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    'a b'
+    'c c';
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 24px;
+}
+.item41 { grid-area: a; }
+.item42 { grid-area: b; }
+.item43 { grid-area: c; }
 
 @media only screen and (max-width:600) {
     .grid-container1 {
