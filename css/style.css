@@ -76,7 +76,7 @@ a {
 }
 
 .nav-logo {
-    width: 334px;
+    width: 275px;
 }
 .nav-menu a {
     float: left;
@@ -327,7 +327,7 @@ p {
     gap: 10px; 
     display: flex;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Open Sans;
     font-weight: 600;
     text-transform: uppercase;
@@ -335,10 +335,6 @@ p {
     text-decoration: none;
 }
 .button-1:hover {
-    padding-left: 24px; 
-    padding-right: 24px; 
-    padding-top: 12px; 
-    padding-bottom: 12px; 
     background: #565272; 
     box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); 
     border-radius: 100px; 
@@ -359,7 +355,7 @@ p {
     gap: 10px; 
     display: flex;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Open Sans;
     font-weight: 600;
     text-transform: uppercase;
@@ -381,7 +377,7 @@ p {
     gap: 10px; 
     display: flex;
     color: #1A135A;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Open Sans;
     font-weight: 600;
     text-transform: uppercase;
@@ -424,17 +420,13 @@ p {
     gap: 10px; 
     display: flex;
     color: #1A135A; 
-    font-size: 20px; 
+    font-size: 16px; 
     font-family: Open Sans; 
     font-weight: 600; 
     text-transform: uppercase; 
     word-wrap: break-word
 }
 .button-2:hover {
-    padding-left: 24px; 
-    padding-right: 24px; 
-    padding-top: 12px; 
-    padding-bottom: 12px; 
     background: #C9C7D6; 
     box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); 
     border-radius: 100px; 
@@ -725,7 +717,8 @@ input[type=submit] {
 
 .item19 {
     width: 100%;
-    height: 780px;
+    height: auto;
+    max-height: 780px;
     background-color: #ffffff;
     object-fit: cover;
     border-radius: 8px;
@@ -1039,6 +1032,42 @@ video {
 .item49 { grid-area: ddd; }
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
+    h1 {
+        font-size: 60px; 
+        font-weight: 700; 
+        line-height: 70px; 
+
+    }
+    h2 {
+        font-size: 36px; 
+        font-weight: 600; 
+        line-height: 40px; 
+    }
+    h3 {
+        font-size: 30px; 
+        font-weight: 600; 
+        line-height: 35px;
+    }
+    h4 {
+        font-size: 24px; 
+        font-weight: 400; 
+    }
+    h5 {
+        font-size: 20px; 
+        font-weight: 500; 
+        line-height: 24px; 
+
+    }
+    h6 {
+        font-size: 48px;  
+        font-weight: 700; 
+        line-height: 55px; 
+
+    } 
+    p {
+        font-size: 16px; 
+        font-weight: 400; 
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1133,6 +1162,34 @@ video {
         grid-template-columns: 1fr 1fr;
         align-items: start;
         gap: 24px;
+    }
+    .grid-container-project {
+        display: grid;
+        grid-template-areas:
+        'ProjectInfo' 
+        'ProjectPhoto';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+    }
+    .item19 {
+        height: auto;
+    }
+    .grid-container-sgqr {
+        display: grid;
+        grid-template-areas:
+        'box1 box2'
+        'box3 box4';
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+    .grid-container-color {
+        display: grid;
+        grid-template-areas:
+        'box1'
+        'box2';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
     }
 }
 
@@ -1292,5 +1349,62 @@ video {
         'form';
         grid-template-rows: auto auto;
         grid-template-columns: 1fr;
+    }
+    .grid-container-project {
+        display: grid;
+        grid-template-areas:
+        'ProjectInfo' 
+        'ProjectPhoto';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+    }
+    .item19 {
+        height: auto;
+    }
+    .grid-container-psp {
+        display: grid;
+        grid-template-areas:
+        'Problem' 
+        'Solution';
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto;
+        gap: 0px;
+    }
+    .grid-container-sgqr {
+        display: grid;
+        grid-template-areas:
+        'box1' 
+        'box2'
+        'box3' 
+        'box4';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    .grid-container-color {
+        display: grid;
+        grid-template-areas:
+        'box1'
+        'box2';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .grid-container-up3 {
+        display: grid;
+        grid-template-areas:
+        'bio' 
+        'interests' 
+        'needs';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+
+    }
+    .grid-container-prototype {
+        display: grid;
+        grid-template-areas:
+        'desktop' 'mobile';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
     }
 }
