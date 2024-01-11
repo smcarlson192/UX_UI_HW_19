@@ -961,7 +961,7 @@ video {
 .item42 { grid-area: b; }
 .item43 { grid-area: c; }
 
-@media only screen and (max-width:600) {
+@media only screen and (max-width:600px) {
     .grid-container1 {
         grid-template-columns: 1fr;
         grid-template-rows:  auto auto auto auto auto auto;
