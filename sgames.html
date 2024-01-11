@@ -11,20 +11,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div class="header">
-                <div class="navbar">
-                    <a href="index.html">
-                        <img src="images/LogowName.png" alt="Stephanie Carlson Designs Logo" style="width: 334.74px; height: 72px;">
-                    </a>
-                    <div class="topnav">
-                        <a href="uxui.html">UX/UI Design</a>
-                        <a class="active" href="gd.html">Graphic Design</a>
-                        <a href="resume.html">Resume</a>
-                        <button onclick="document.location='contact.html'" class="button-1">Get In Touch</button>
-                    </div>
+        <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/LogowName.png" alt="Stephanie Carlson Designs Logo" width="334" height="72">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="uxui.html" class="nav-link">UX/UI Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gd.html" class="nav-link">Graphic Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resume.html" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Get In Touch</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-            </div>
+            </nav>
         </header>
         <section>
             <!-- Project Header Section Constructed using CSS Grid -->
@@ -62,7 +73,7 @@
                 <button onclick="document.location='abbvv.html'" class="button-2">View Next Project<img src="images/arrow_next.svg" alt="View AbbVie Video Animation Projects" style="width:15px; height:13px; "></button>
             </div>
         </section>
-        <footer>
+        <footer class="footer">
             <div class="footerbar">
                 <div class="logo">
                     <img src="images/LogoNoTag.png" alt="Stephanie Carlson Designs Logo" style="width: 377.95px; height: 110px;">
