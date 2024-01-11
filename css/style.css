@@ -1137,6 +1137,42 @@ video {
 }
 
 @media only screen and (max-width:768px) {
+    h1 {
+        font-size: 60px; 
+        font-weight: 700; 
+        line-height: 70px; 
+
+    }
+    h2 {
+        font-size: 36px; 
+        font-weight: 600; 
+        line-height: 40px; 
+    }
+    h3 {
+        font-size: 30px; 
+        font-weight: 600; 
+        line-height: 35px;
+    }
+    h4 {
+        font-size: 24px; 
+        font-weight: 400; 
+    }
+    h5 {
+        font-size: 20px; 
+        font-weight: 500; 
+        line-height: 24px; 
+
+    }
+    h6 {
+        font-size: 48px;  
+        font-weight: 700; 
+        line-height: 55px; 
+
+    } 
+    p {
+        font-size: 16px; 
+        font-weight: 400; 
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
