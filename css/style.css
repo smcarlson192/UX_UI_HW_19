@@ -454,6 +454,9 @@ p {
 .fc-p {
     color: #565272; 
 }
+.txta {
+    text-align: center;
+} 
 .bxtealbdr {
     background: #D1EBEE; 
     padding: 24px; 
@@ -933,7 +936,7 @@ input[type=submit] {
     object-fit: cover;
 }
 .spacer {
-    width: 94%; 
+    width: 100%; 
     height: 100%; 
     border: 2px #E8E7F0 solid; 
     margin: auto;
