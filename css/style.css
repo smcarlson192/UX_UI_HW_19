@@ -478,6 +478,10 @@ p {
     word-wrap: break-word; 
     border: 2px solid #ffffff;
 }
+.a-s {
+    align-items: start;
+    align-content: start;
+}
 .bkgdlp {
     background: #E8E7F0;   
 }
