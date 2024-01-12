@@ -562,7 +562,7 @@ p {
     margin-left: 24px;
 }
   
-.active:after {
+.on:after {
     content: "\2212";
 }
   
