@@ -922,10 +922,6 @@ input[type=submit] {
     background: #ffffff; 
     gap: 24px;
     margin-top: 24px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 72px;
-    padding-right: 72px;
 }
 .item25 { grid-area: box1; }
 .item26 { grid-area: box2; }
