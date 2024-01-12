@@ -432,6 +432,9 @@ p {
     padding-bottom: 48px;
     padding-right: 72px;
 }
+.pmadjust {
+    padding-left: 24px;
+}
 .d-f-g {
     display: flex; 
     gap: 24px;
@@ -444,6 +447,9 @@ p {
 }
 .gap-r {
     padding-right: 24px;
+}
+.p-b {
+    padding-bottom: 24px;
 }
 .fc-p {
     color: #565272; 
@@ -610,8 +616,6 @@ p {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto auto;
     background-color: #ffffff;
-    padding-left: 48px;
-    padding-right: 48px;
 }
 
 .grid-item, .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
@@ -634,6 +638,8 @@ p {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 .item7 { grid-area: OPTO; }
@@ -657,8 +663,6 @@ p {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto auto;
     background-color: #ffffff;
-    padding-left: 48px;
-    padding-right: 48px;
 }
 
 .grid-container3 {
@@ -765,11 +769,6 @@ input[type=submit] {
     grid-template-areas:
     'ProjectInfo ProjectPhoto';
     grid-template-columns: 50% 50%;
-    background: linear-gradient(90deg, #E2E6F2 0%, #D1EBEE 25%, #E9E0F2 50%, #E2E6F2 76%, #EBF3DE 100%); 
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 72px;
-    padding-right: 72px;
 }
 .item18 { grid-area: ProjectInfo; 
     margin-top: 24px;
@@ -1061,8 +1060,6 @@ video {
     grid-template-columns: 48.5% 48.5%;
     align-items: center;
     gap: 24px;
-    padding-left: 72px;
-    padding-right: 72px;
 }
 .item41 { grid-area: a; }
 .item42 { grid-area: b; }
@@ -1106,8 +1103,6 @@ video {
     grid-template-rows: auto auto auto;
     align-items: center;
     gap: 24px;
-    padding-left: 72px;
-    padding-right: 72px;
 }
 .grid-container-2evenfull2 {
     display: grid;
@@ -1123,8 +1118,6 @@ video {
     grid-template-rows: auto auto auto;
     align-items: center;
     gap: 24px;
-    padding-left: 72px;
-    padding-right: 72px;
 }
 .item51 { grid-area: aaaa; }
 .item52 { grid-area: bbbb; }
@@ -1144,8 +1137,6 @@ video {
     justify-items: center;
     align-items: center;
     gap: 24px;
-    padding-left: 72px;
-    padding-right: 72px;
 }
 .item57 { grid-area: aaaaa; }
 .item58 { grid-area: bbbbb; }
