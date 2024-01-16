@@ -104,9 +104,39 @@ a {
     text-decoration: none;
 }
 
+.pointer {
+    cursor: pointer;
+}
+.bullet:before {
+    content : "\2022";
+    padding-right: 6px;
+}
 
-
-
+.breadcrumb {
+    padding-bottom: 6px;
+    padding-top: 6px;
+    list-style: none;
+    }
+    
+  .breadcrumb-item {
+    display: inline;
+    font-size: 16px;
+    }
+  
+  .breadcrumb li+li:before {
+    padding: 6px;
+    color: #1A135A;
+    content: "/";
+  }
+  
+  .breadcrumb-item a {
+    color: #1A135A;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item a:hover{
+    color: #565272;
+  }
 
 header {
     height: 9rem; 
@@ -258,7 +288,6 @@ h6 {
     margin: 0px;
 } 
 p {
-    color: #1A135A; 
     font-size: 20px; 
     font-family: Open Sans; 
     font-weight: 400; 
@@ -267,8 +296,8 @@ p {
     margin-block-end: 0px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    margin-top: 12px; 
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+    color: #565272; 
 }
 .header {
     width: 100%; 
@@ -333,6 +362,7 @@ p {
     text-transform: uppercase;
     word-wrap: break-word;
     text-decoration: none;
+    cursor: pointer;
 }
 .button-1:hover {
     background: #565272; 
@@ -361,6 +391,8 @@ p {
     text-transform: uppercase;
     word-wrap: break-word;
     text-decoration: none;
+    cursor: pointer;
+
 }
 .button-circle-1:hover {
     background: #565272; 
@@ -383,6 +415,8 @@ p {
     text-transform: uppercase;
     word-wrap: break-word;
     text-decoration: none;
+    cursor: pointer;
+
 }
 .button-circle-2:hover {
     background: #C9C7D6; 
@@ -424,7 +458,8 @@ p {
     font-family: Open Sans; 
     font-weight: 600; 
     text-transform: uppercase; 
-    word-wrap: break-word
+    word-wrap: break-word;
+    cursor: pointer;
 }
 .p-all {
     padding-left: 72px;
@@ -457,6 +492,9 @@ p {
 .txta {
     text-align: center;
 } 
+.aln-t {
+    align-self: start;
+}
 .bxtealbdr {
     background: #D1EBEE; 
     padding: 24px; 
@@ -582,6 +620,8 @@ p {
     justify-content: flex-start; 
     align-items: flex-start; 
     display: inline-flex;
+    cursor: pointer;
+
 }
 .project-photo {
     align-self: stretch; 
@@ -840,7 +880,6 @@ input[type=submit] {
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: flex-start; 
-    gap: 24px; 
     display: inline-flex;
 }
 .grid-container-sgqr {
@@ -1146,6 +1185,16 @@ video {
 .item63 { grid-area: ggggg; }
 .item64 { grid-area: hhhhh; }
 
+.grid-container-up3s {
+    display: grid;
+    grid-template-areas:
+    'bio interests needs';
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    gap: 24px;
+    margin-top: 24px;
+}
+
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
     h1 {
         font-size: 60px; 
@@ -1315,6 +1364,14 @@ video {
         grid-template-rows: auto auto;
     }
     .grid-container3 {
+        display: grid;
+        grid-template-areas:
+        'head'
+        'form';
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+    }
+    .grid-container-up3s {
         display: grid;
         grid-template-areas:
         'head'
@@ -1536,7 +1593,15 @@ video {
         'needs';
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
-
+    }
+    .grid-container-up3s {
+        display: grid;
+        grid-template-areas:
+        'bio' 
+        'interests' 
+        'needs';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
     }
     .grid-container-prototype {
         display: grid;
