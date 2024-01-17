@@ -744,10 +744,6 @@ p {
     display: grid;
     grid-template-areas: 'head form';
     grid-template-columns: 50% 50%;
-    padding-left: 72px;
-    padding-right: 72px;
-    padding-top: 48px;
-    padding-bottom: 48px;
     background-color: #ffffff;
 }
 .item16 {
