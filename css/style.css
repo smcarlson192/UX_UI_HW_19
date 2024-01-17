@@ -141,8 +141,6 @@ a {
 header {
     height: 9rem; 
     width: 94%;
-    padding-left: 72px; 
-    padding-right: 72px; 
     padding-top: 12px; 
     padding-bottom: 12px; 
     background: linear-gradient(90deg, #E2E6F2 0%, #D1EBEE 25%, #E9E0F2 50%, #E2E6F2 76%, #EBF3DE 100%); 
@@ -467,6 +465,10 @@ p {
     padding-bottom: 48px;
     padding-right: 72px;
 }
+.p-rl {
+    padding-left: 72px;
+    padding-right: 72px;
+}
 .pmadjust {
     padding-left: 24px;
 }
@@ -505,6 +507,16 @@ p {
     word-wrap: break-word; 
     border: 2px solid #ffffff;
 }
+.bxdktealbdr {
+    background: #49C1CE; 
+    padding: 24px; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 12px; 
+    text-align: center; 
+    word-wrap: break-word; 
+    border: 2px solid #ffffff;
+}
 .bxlimebdr {
     background: #EBF3DE; 
     padding: 24px; 
@@ -515,8 +527,28 @@ p {
     word-wrap: break-word; 
     border: 2px solid #ffffff;
 }
+.bxdklimebdr {
+    background: #B6E668; 
+    padding: 24px; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 12px; 
+    text-align: center; 
+    word-wrap: break-word; 
+    border: 2px solid #ffffff;
+}
 .bxgoldbdr {
     background: #F3EEE5; 
+    padding: 24px; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 12px; 
+    text-align: center; 
+    word-wrap: break-word; 
+    border: 2px solid #ffffff;
+}
+.bxdkgoldbdr {
+    background: #EBAA43; 
     padding: 24px; 
     justify-content: center; 
     align-items: center; 
@@ -1194,8 +1226,10 @@ video {
     gap: 24px;
     margin-top: 24px;
 }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
 
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
+}
+@media only screen and (min-width: 768.1px) and (max-width: 992.9px) {
     h1 {
         font-size: 60px; 
         font-weight: 700; 
@@ -1374,10 +1408,8 @@ video {
     .grid-container-up3s {
         display: grid;
         grid-template-areas:
-        'head'
-        'form';
-        grid-template-rows: auto auto;
-        grid-template-columns: 1fr;
+        'bio interests needs';
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .item16 {
         background-color: #ffffff;
@@ -1389,7 +1421,21 @@ video {
     }
 }
 
+
 @media only screen and (max-width:768px) {
+    .p-all {
+        padding-left: 48px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-right: 48px;
+    }
+    .p-rl {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+    .breadcrumb {
+        display: none;
+    }
     h1 {
         font-size: 60px; 
         font-weight: 700; 
