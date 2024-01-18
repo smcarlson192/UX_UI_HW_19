@@ -155,8 +155,6 @@ header {
     height: 20rem;  
     padding-top: 24px; 
     padding-bottom: 24px;
-    padding-left: 72px; 
-    padding-right: 72px;  
     background: linear-gradient(90deg, #E2E6F2 0%, #D1EBEE 25%, #E9E0F2 50%, #E2E6F2 76%, #EBF3DE 100%); 
     justify-content: space-between; 
     align-items: center; 
@@ -497,13 +495,15 @@ p {
 .aln-t {
     align-self: start;
 }
+.h-full {
+    height: 100%;
+}
 .bxtealbdr {
     background: #D1EBEE; 
     padding: 24px; 
     justify-content: center; 
     align-items: center; 
     gap: 12px; 
-    text-align: center; 
     word-wrap: break-word; 
     border: 2px solid #ffffff;
 }
@@ -513,7 +513,6 @@ p {
     justify-content: center; 
     align-items: center; 
     gap: 12px; 
-    text-align: center; 
     word-wrap: break-word; 
     border: 2px solid #ffffff;
 }
@@ -523,7 +522,6 @@ p {
     justify-content: center; 
     align-items: center; 
     gap: 12px; 
-    text-align: center; 
     word-wrap: break-word; 
     border: 2px solid #ffffff;
 }
@@ -533,7 +531,6 @@ p {
     justify-content: center; 
     align-items: center; 
     gap: 12px; 
-    text-align: center; 
     word-wrap: break-word; 
     border: 2px solid #ffffff;
 }
@@ -543,7 +540,6 @@ p {
     justify-content: center; 
     align-items: center; 
     gap: 12px; 
-    text-align: center; 
     word-wrap: break-word; 
     border: 2px solid #ffffff;
 }
@@ -553,9 +549,11 @@ p {
     justify-content: center; 
     align-items: center; 
     gap: 12px; 
-    text-align: center; 
     word-wrap: break-word; 
     border: 2px solid #ffffff;
+}
+.a-str {
+    align-self: stretch;
 }
 .a-s {
     align-items: start;
@@ -1085,7 +1083,7 @@ input[type=submit] {
     grid-template-areas:
     'bio interests needs';
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    align-items: start;
     gap: 24px;
     margin-top: 24px;
 }
@@ -1184,6 +1182,16 @@ video {
     grid-template-rows: auto auto auto;
     align-items: center;
     gap: 24px;
+}
+.grid-container-3x2bxs {
+    display: grid;
+    grid-template-areas:
+    'aaaa cccc eeee'
+    'bbbb dddd ffff';
+    grid-template-columns: 32.5% 32.5% 32.5%;
+    grid-template-rows: auto auto;
+    gap: 24px;
+    margin-top: 24px;
 }
 .item51 { grid-area: aaaa; }
 .item52 { grid-area: bbbb; }
@@ -1730,5 +1738,19 @@ video {
         'hhhhh';
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto auto auto auto;
+    }
+    .grid-container-3x2bxs {
+        display: grid;
+        grid-template-areas:
+        'aaaa'
+        'bbbb'
+        'cccc'
+        'dddd'
+        'eeee'
+        'ffff';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        gap: 24px;
+        margin-top: 24px;
     }
 }
