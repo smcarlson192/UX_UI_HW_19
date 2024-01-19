@@ -42,7 +42,10 @@
         </header>
         <section>
             <div>
-                <img src="images/Resume.png" alt="Stephanie Carlson's Resume Photo" >
+                <picture>
+                    <source media="(max-width:768px)" srcset="images/Resume-Mobile.png">
+                    <img src="images/Resume.png" alt="Stephanie Carlson's Resume Photo" width="1728" height="900">
+                </picture>
             </div>
             <div style="padding-left: 72px; padding-top: 24px; padding-bottom: 24px;">
                 <button onclick="document.location='images/Carlson_Resume2023.pdf'" class="button-1"><img src="images/icon-download.svg" alt="Download Icon" style="width: 32px; height:32px;">View PDF of this Resume</button> 
