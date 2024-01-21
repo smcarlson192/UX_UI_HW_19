@@ -350,7 +350,7 @@ p {
     justify-content: center; 
     align-items: center; 
     gap: 10px; 
-    display: flex;
+    display: inline-flex;
     color: white;
     font-size: 16px;
     font-family: Open Sans;
@@ -367,8 +367,6 @@ p {
     justify-content: center; 
     align-items: center; 
     gap: 10px; 
-    display: flex;
-    font-weight: 700;
 }
 .button-circle-1 {
     padding:12px; 
@@ -448,7 +446,7 @@ p {
     justify-content: center; 
     align-items: center; 
     gap: 10px; 
-    display: flex;
+    display: inline-block;
     color: #1A135A; 
     font-size: 16px; 
     font-family: Open Sans; 
@@ -572,8 +570,6 @@ p {
     justify-content: center; 
     align-items: center; 
     gap: 10px; 
-    display: flex;
-    font-weight: 700;
 }
 .featured-section {
     width: 94%; 
